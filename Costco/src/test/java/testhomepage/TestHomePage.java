@@ -61,7 +61,7 @@ public class TestHomePage extends CommonAPI {
         homePage.checkboxesWH("Queens");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void checktry() {
         homePage.checkmarkWH("New YORK");
 

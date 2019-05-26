@@ -16,9 +16,9 @@
     <test name="Costco Home">
         <classes>
             <!--class name="testcreateaccount.TestCreateAccount"/-->
-            <!--class name="testhomepage.TestHomePage"/-->
+            <class name="testcommonapi.TestCommonAPI"/>
             <!--class name="testbrokenlink.BrokenlinksTest"/-->
-            <class name="testcart.TestCart"/>
+            <!--<class name="testcart.TestCart"/>-->
 
 
 

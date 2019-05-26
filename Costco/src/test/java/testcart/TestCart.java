@@ -14,7 +14,7 @@ public class TestCart extends CommonAPI {
         cart = PageFactory.initElements(driver, Cart.class);
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void testcart(){
         cart.cart();
     }

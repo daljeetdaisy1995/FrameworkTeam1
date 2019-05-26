@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Optional;
+import reporting.TestLogger;
 
 import java.sql.Time;
 import java.util.concurrent.TimeUnit;
@@ -145,6 +146,7 @@ public class HomePage extends CommonAPI {
     }
 
     public void checkmarkWH(String State){
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         actions = new Actions(driver);
         actions.moveToElement(findWarehouse);
         actions.perform();
@@ -152,7 +154,7 @@ public class HomePage extends CommonAPI {
         searchWH.sendKeys(State);
         //driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
         //System.out.println(checkboxes.getSize());
-        //driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
         markup.click();
         sleepFor(6);
         System.out.println(markup.isEnabled());
